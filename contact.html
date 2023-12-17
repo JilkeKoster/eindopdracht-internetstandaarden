@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jilke Koster">
+        <title>olympische spelen</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+        <link rel="stylesheet" href="https://use.typekit.net/qyg1vsf.css">
+        <script src="https://kit.fontawesome.com/ed478923ae.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <label class="logo">Olympische Spelen</label>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="geschiedenis.html">Geschiedenis</a></li>
+                    <li><a href="amsterdam1928.html">Amsterdam 1928</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+     <!-- Bron voor code van de nav: https://youtu.be/oLgtucwjVII?si=B5KOrYXz7QyBHzHA -->
+
+        <main>
+            <article class="formulier">
+                <h1>Contact</h1>
+                <p>
+                    Wil je met ons contact opnemen? Dat kan je. Vul dan het onderstaande formulier in.
+                </p>
+
+                <form>
+                    <label for="fname">Je voornaam:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Voornaam">
+
+                    <label for="lname">Je achternaam:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Achternaam">
+
+                    <label for="email">Je email:</label>
+                    <input type="email" id="email" placeholder="Email" pattern=".+@example\.com">
+
+                    <label for="onderwerp">Onderwerp:</label>
+                    <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp">
+
+                    <label for="bericht">Je bericht:</label>
+                    <input type="text" id="bericht" name="bericht" placeholder="Bericht">
+
+                    <input class="verzenden" type="submit" value="Verzend bericht">
+                </form>
+            </article>
+        </main>
+
+        <footer class="footer-home">
+            <p>	&copy; Jilke Koster</p>
+        </footer>
+    </body>
+</html>

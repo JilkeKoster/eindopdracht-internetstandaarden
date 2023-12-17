@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "komet", sans-serif;
+    background-color: #F2F2F2;
+}
+
+.index {
+    background-image: url("../img/olympics.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #A7C5C5;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 700;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background-color: #3C3940;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Bron nav: https://youtu.be/oLgtucwjVII?si=B5KOrYXz7QyBHzHA */
+
+article.intro {
+    width: 500px;
+    color: #fff;
+    float: right;
+    margin-right: 20%;
+    margin-top: 10%;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Bron animiatie: https://webcode.tools/css-generator/keyframe-animation */
+
+article.intro h1 {
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+article.intro p {
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+main.container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main.container h1 {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Brons animiatie: https://webcode.tools/css-generator/keyframe-animation */
+
+.symbolen {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.symbolen-blok {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blok {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.blok p {
+    width: 250px;
+    margin: auto;
+    text-align: justify;
+}
+
+.blok img {
+    padding-bottom: 20px;
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.blok h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.blok-sporten {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blok-sporten ul {
+    padding: 20px;
+}
+
+.sporten {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sporten p {
+    margin-top: 20px;
+}
+
+.vlaggen {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.rij {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vlaggen ul {
+    padding: 20px;
+}
+
+.vlaggen img {
+    width: 50px;
+    border: 1px solid #000;
+}
+
+article.formulier {
+    width: 1000px;
+    background-color: #fff;
+    box-shadow: 10px 10px 44px -3px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+article.formulier h1 {
+    color: #3C3940;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Brons animiatie: https://webcode.tools/css-generator/keyframe-animation */
+
+article.formulier p {
+    color: #3C3940;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+form label {
+    color: #3C3940;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form input.verzenden {
+    cursor: pointer;
+    background-color: #A7C5C5;
+    border: 0;
+    width: 200px;
+    border-radius: 5px;
+}
+
+form input.verzenden:hover {
+    background-color: #3C3940;
+    color: #fff;
+}
+
+footer.footer-home {
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #A7C5C5;
+    text-align: center;
+}
+
+.footer-home p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.footer-home p a {
+    color: #fff;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #A7C5C5;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+footer p a {
+    color: #fff;
+}
+
+
+@media (max-width: 952px) {
+    nav h1 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        background: #A7C5C5;
+    }
+
+    label.logo {
+        font-size: 20px;
+        padding: 0 30px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #A7C5C5;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #3C3940;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .index {
+        background-image: url(../img/olympics-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    article.intro {
+        width: 250px;
+        margin-top: 150px;
+    }
+
+    .container {
+        width: 250px !important;
+        margin: auto;
+    }
+
+    .algemeen-geschiedenis {
+        width: 250px;
+    }
+
+    .symbolen {
+        width: 250px;
+    }
+
+    .symbolen-blok {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blok {
+        padding: 20px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .blok img {
+        width: 200px;
+    }
+
+    .blok p {
+        width: 200px;
+    }
+
+    .boycot {
+        width: 250px;
+    }
+
+    .formulier {
+        width: 250px !important;
+    }
+
+    .formulier h1 {
+        padding-top: 20px;
+    }
+
+    .formulier p {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: auto;
+        width: 200px;
+    }
+
+    form {
+        width: 200px;
+    }
+
+}
